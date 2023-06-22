@@ -7,7 +7,7 @@ import pytz
 
 db = pymongo.MongoClient("mongodb+srv://RPN:RPN@tgreporternew.rys1amm.mongodb.net/?retryWrites=true&w=majority").my_db
 
-@bot.on_message()
+@Cleint.on_message()
 async def handle_message(client, message):
     if message.text.startswith("@admin"):
         # Send the loading message
