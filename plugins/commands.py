@@ -22,7 +22,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
-                [InlineKeyboardButton('⚡️ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ⚡️', callback_data="about")]
+                [InlineKeyboardButton('⚡️ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ⚡️', callback_data="help")]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
